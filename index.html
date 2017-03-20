@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+import angular.module;
+
+<html>
+<script> 
+    var app = angular.module("taniShoppingList",[]);
+    app.controller("myCtrl",function ($scope) {
+        $scope.products = ["milk","bread","cheese"];
+    });
+</script>
+<div ng-app = "myShoppingList" ng-controller= "myCtrl">
+    <ul>
+        <li ng-repeat = "x in products">{{x}}</li>
+    </ul>
+</div>
+    
+</html>
